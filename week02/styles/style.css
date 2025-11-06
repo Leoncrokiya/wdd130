@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: cyan;
+    padding: 10px;
+}
+
+nav a {
+    display: block;
+    color: lavender;
+    padding: 10px;
+}
+
+h1 {
+    color: lightpink;
+    padding: .5em;
+}
+
+main {
+    max-width: 640px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px bluelavender solid;
+    padding: 2px;
+    box-shadow: 0 0 30px white;
+}
+
+aside {
+    width: 20em;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+
+/* Class sector */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 1rem;
+    background-color: greyindigo;
+    color: amber;
+}
