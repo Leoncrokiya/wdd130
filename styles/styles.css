@@ -5,6 +5,13 @@ nav {
     display: block;
 }
 
+nav a {
+    color: #333;
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+}
+
 main {
     max-width: 840px;
 }
@@ -16,7 +23,7 @@ h1 {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb (0 0 0 / 0.2);
+    border: 1px solid rgb (0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
