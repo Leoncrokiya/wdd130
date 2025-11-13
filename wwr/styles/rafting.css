@@ -49,7 +49,7 @@ article {
 
 .hero img {
     display: block;
-    width: 100;
+    width: 100%;
     height: auto;
 }
 
@@ -76,5 +76,5 @@ h1 {
 
 .hero article img {
     float: right;
-    width: 100px;
+    width: 90px;
 }
