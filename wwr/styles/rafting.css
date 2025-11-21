@@ -1,3 +1,18 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #333;
+    --background-color: #F0F8FF;
+    --text-color: #333333;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     margin: 1rem auto;
     display: grid;
@@ -44,6 +59,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+nav {
+    text-decoration: none;
+}
+
 h1 {
     font-size: 1.85rem;
     text-align: center;
@@ -63,9 +82,46 @@ section {
     width: min(800px, 100%);
 }
 
-
 code {
     font-family: 'Courier New', Courier, monospace;
     font-size: smaller;
     padding: 0.5em;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    /* background-color: var(--accent1-color); */
+    color: #fff;
+    background-color: grey;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    background-color: grey;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    /* background-color: var(--background-color); */
+    padding: 16px;
+    opacity: 0.8;
+    width: calc(100% - 160px);
+    background-color: grey;
+}
+
+.hero article img {
+    float: right;
+    width: 90px;
+    background-color: grey;
+}
+
+footer a {
+    text-decoration: none;
 }
