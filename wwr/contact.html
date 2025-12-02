@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Contact Us White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
     <meta name="author" content="Lwandle Kyle Bayanda Hlongwa">
     <meta name="description" content="Learn more about our white water rafting company, its history, and the adventures we offer.">
@@ -37,24 +37,22 @@
         <div class="user">
             <form action="input" class="details">
                 <label for="name">Name</label><br>
-                <input type="text"><br>
+                <input type="text" id="name" name="name" required><br>
                 <label for="email">Email</label><br>
-                <input type="text"><br>
-            <p class="label">Message Purpose</p>
-    <label>
-        <input type="radio" name="choice" value="option1">
-        General Inquiry
-    </label><br>
-    <label>
-      <input type="radio" name="choice" value="option2">
-      Reservation Question
-    </label><br>
-    <label>
-      <input type="radio" name="choice" value="option3">
-      Website Suggestions
-    </label><br><br>
+                <input type="email" id="email" name="email" required><br>
+                        <fieldset class="message-purpose">
+                            <legend>Message Purpose</legend>
+                            <input type="radio" id="choice-general" name="choice" value="option1">
+                            <label for="choice-general">General Inquiry</label><br>
+                            <input type="radio" id="choice-reservation" name="choice" value="option2">
+                            <label for="choice-reservation">Reservation Question</label><br>
+                            <input type="radio" id="choice-website" name="choice" value="option3">
+                            <label for="choice-website">Website Suggestions</label>
+                        </fieldset>
     <label for="message">Message</label><br><br>
-    <input type="text" size="20" height="30"><br><br>
+    <textarea id="message" name="message" rows="6" cols="40" placeholder="Type your message here"></textarea><br><br>
+    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+    <label for="subscribe">Please Subscribe me to the monthly newsletter</label><br>
     <button type="submit">Get in Touch!</button><br><br>
   </form>
         </div>
@@ -93,5 +91,3 @@
 </footer>
 
 </html>
-
-
