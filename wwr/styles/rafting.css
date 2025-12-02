@@ -5,8 +5,9 @@ html, body {
 }
 
 .hero {
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    /* height: 100vh; */
     text-align: center;
     padding-top: 20px;
 }
@@ -187,4 +188,29 @@ header nav ul {
 .hero h1,
 .hero p {
     margin: 0;
+}
+
+/* keep radios and checkbox inline */
+.details input[type="radio"],
+.details input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.details label[for^="choice"],
+.details label[for="subscribe"] {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.details fieldset {
+    border: none;
+    margin: 8px 0 12px 0;
+    padding: 0;
+}
+
+.details legend {
+    font-weight: bold;
+    margin-bottom: 6px;
 }
