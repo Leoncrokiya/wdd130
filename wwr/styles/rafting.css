@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: arial, sans-serif;
@@ -25,7 +26,8 @@ html, body {
     font-size: 20px;
 }
 
-.number, .email {
+.number,
+.email {
     font-size: 15px;
 }
 
@@ -51,9 +53,9 @@ html, body {
 }
 
 .container {
-  padding: 20px;
-  background-color: #f0f0f0;
-  text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
 }
 
 ul {
@@ -100,14 +102,14 @@ header {
 }
 
 main {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 center {
- margin: auto;
- width: 50%;
- border: 3px solid;
- padding: 10px;
+    margin: auto;
+    width: 50%;
+    border: 3px solid;
+    padding: 10px;
 }
 
 header img {
@@ -118,7 +120,8 @@ header img {
     float: none;
 }
 
-    /* display: block;
+
+/* display: block;
     background-color: #fff;
     border: 1px solid #000;
     margin: 0;
@@ -132,10 +135,13 @@ header img {
 } */
 
 section {
-    background-color: #f1f1f1; /* White background */
-  border: 2px solid #000; /* Red border */
-  /* border-radius: px; Slightly rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    background-color: #f1f1f1;
+    /* White background */
+    border: 2px solid #000;
+    /* Red border */
+    /* border-radius: px; Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
 }
 
 section figure {
@@ -147,15 +153,16 @@ section h2 {
 }
 
 .footer {
-        position: relative;
-        padding: 10px;
-        background-color: #f1f1f1; /* Optional styling */
-        border: 2px solid #000;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0;
+    position: relative;
+    padding: 10px;
+    background-color: #f1f1f1;
+    /* Optional styling */
+    border: 2px solid #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
 }
 
 .footer-img {
@@ -190,7 +197,9 @@ header nav ul {
     margin: 0;
 }
 
+
 /* keep radios and checkbox inline */
+
 .details input[type="radio"],
 .details input[type="checkbox"] {
     width: auto;
