@@ -1,0 +1,47 @@
+.button {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: backgroung-color 0.3s;
+}
+
+.input {
+    padding-bottom: 100px;
+}
+
+.container {
+    position: relative;
+    /* Establishes positioning context for children */
+    display: inline-block;
+    /* Optional: keeps container width to image width */
+}
+
+
+/* .background-img {
+    display: block;
+    width: 100%;
+    height: auto;
+} */
+
+.overlay-text {
+    position: absolute;
+    /* Positions element relative to the container */
+    top: 50%;
+    /* Centers vertically */
+    left: 50%;
+    /* Centers horizontally */
+    transform: translate(-50%, -50%);
+    /* Ensures perfect centering */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+    /* Ensures it is above the image */
+}

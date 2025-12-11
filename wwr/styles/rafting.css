@@ -13,6 +13,26 @@ body {
     padding-top: 20px;
 }
 
+main div h1 {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: backgroung-color 0.3s;
+}
+
+.input {
+    padding-bottom: 100px;
+}
+
 .address {
     width: 25%;
     text-align: center;

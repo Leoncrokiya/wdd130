@@ -20,6 +20,43 @@ main {
     margin: 0 auto;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0px;
+    align-items: center;
+}
+
+.navigation li {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li a {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 0;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-tagline {
     color: darkblue;
     margin-top: 20px;
