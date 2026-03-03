@@ -13,7 +13,7 @@ nav {
 
 nav a {
     color: #333;
-    padding: 10rem 10;
+    padding: 0;
     display: block;
     text-decoration: none;
 }
@@ -27,8 +27,13 @@ h1 {
 }
 
 aside {
+    margin: 1rem;
     width: 20px;
     text-align: center;
+    border: 1px solid #000;
+    padding: 1rem;
+    background-color: #fff;
+    color: #333;
 }
 
 aside h2 {
