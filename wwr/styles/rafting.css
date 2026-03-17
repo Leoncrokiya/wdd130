@@ -6,11 +6,20 @@ body {
 }
 
 .hero {
+    position: relative;
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
     text-align: center;
     padding-top: 20px;
+}
+
+.hero h1 {
+    position: absolute;
+}
+
+.hero article {
+    float: right;
 }
 
 main div h1 {
@@ -141,18 +150,6 @@ header img {
 }
 
 
-/* display: block;
-    background-color: #fff;
-    border: 1px solid #000;
-    margin: 0;
-    padding: 8px 12px;
-    text-decoration: none;
-    color: inherit;
-    text-align: center;
-    justify-content: space-between;
-    padding: 10px;
-    display: flex;
-} */
 
 section {
     background-color: #f1f1f1;
