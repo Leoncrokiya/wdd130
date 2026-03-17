@@ -1,17 +1,121 @@
-html,
-body {
+*{
     margin: 0;
     padding: 0;
-    font-family: arial, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #333;
+    --accent1-color: #ECBB66;
+    --background-color: #F0F8FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+    font: var(--heading-font);
+}
+
+.logo img {
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+}
+
+#logo {
+    font-size: 2rem;
+    font-family: Acme, Arial, sans-serif;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: navy;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navigation a:hover {
+    color: tomato;
+    text-decoration: underline;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font: var(--body-font);
+}
+
+nav {
+    text-decoration: none;
+}
+
+h2 {
+    color: Maroon;
+    font-size: 1.25rem;
+}
+
+section {
+    margin: 1em auto;
+    padding: 1em;
+    border: 1px solid rgb(0 0 0 / 10%);
+    background-color: #ddd;
+    width: min(800px, 100%);
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    padding: 0.5em;
+}
+
+h1 {
+    font-size: 1.85rem;
+    font-family: Acme, Arial, sans-serif;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+    font: var(--heading-font);
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.socialmedia a {
+    /* text-decoration: none; */
+    background-color: var(--text-color);
+    align-self: self-end;
 }
 
 .hero {
     position: relative;
-    justify-content: center;
-    align-items: center;
-    /* height: 100vh; */
-    text-align: center;
-    padding-top: 20px;
+    background-color: grey;
+    color: var(--primary-color);
 }
 
 .hero h1 {
@@ -19,224 +123,26 @@ body {
 }
 
 .hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--background-color);
+    padding: 16px;
+    opacity: 0.8;
+    width: calc(100% - 160px);
+}
+
+.hero article img {
     float: right;
+    width: 90px;
+    background-color: var(--secondary-color);
 }
 
-main div h1 {
-    text-align: center;
-}
-
-.button {
-    display: inline-block;
-    background-color: green;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 15px;
+footer a,
+img {
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.input {
-    padding-bottom: 100px;
-}
-
-.address {
-    width: 25%;
-    text-align: center;
-    margin: 0 auto;
-    padding-block: 20px;
-    margin: 10px 0;
-    font-size: 15px;
-}
-
-.heading {
-    font-size: 20px;
-}
-
-.number,
-.email {
-    font-size: 15px;
-}
-
-.user {
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.map {
-    display: inline-block;
-    vertical-align: top;
-    width: 60%;
-    box-sizing: border-box;
-}
-
-.map iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
-}
-
-.container {
-    padding: 20px;
-    background-color: #f0f0f0;
-    text-align: center;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.navigation {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 0px;
-    align-items: center;
-}
-
-.navigation li {
-    margin: 0;
-    padding: 0;
-}
-
-.navigation li a {
-    display: block;
-    background-color: #fff;
-    border: 1px solid #000;
-    margin: 0;
-    padding: 8px 12px;
-    text-decoration: none;
-    color: inherit;
-}
-
-header {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    min-height: 60px;
-    text-align: center;
-    padding: 10px;
-    background-color: lightgray;
-    border: 2px solid #000;
-}
-
-main {
-    margin-bottom: 20px;
-}
-
-center {
-    margin: auto;
-    width: 50%;
-    border: 3px solid;
-    padding: 10px;
-}
-
-header img {
-    width: 128px;
+    width: 48px;
     height: auto;
-    display: block;
-    text-decoration: none;
-    float: none;
-}
-
-
-
-section {
-    background-color: #f1f1f1;
-    /* White background */
-    border: 2px solid #000;
-    /* Red border */
-    /* border-radius: px; Slightly rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Subtle shadow */
-}
-
-section figure {
-    display: inline-block;
-}
-
-section h2 {
-    text-align: center;
-}
-
-.footer {
-    position: relative;
-    padding: 10px;
-    background-color: #f1f1f1;
-    /* Optional styling */
-    border: 2px solid #000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: space-between;
+    margin: 0 8px;
     align-items: center;
-    margin: 0;
-}
-
-.footer-img {
-    padding-top: 20px;
-}
-
-footer {
-    margin-top: 20px;
-    text-align: right;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-footer img {
-    display: block;
-    width: 64px;
-    height: auto;
-    text-decoration: none;
-    float: right;
-}
-
-header nav ul {
-    margin: 0;
-    padding: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero h1,
-.hero p {
-    margin: 0;
-}
-
-
-/* keep radios and checkbox inline */
-
-.details input[type="radio"],
-.details input[type="checkbox"] {
-    width: auto;
-    display: inline-block;
-    margin-right: 6px;
-}
-
-.details label[for^="choice"],
-.details label[for="subscribe"] {
-    display: inline-block;
-    margin-right: 12px;
-}
-
-.details fieldset {
-    border: none;
-    margin: 8px 0 12px 0;
-    padding: 0;
-}
-
-.details legend {
-    font-weight: bold;
-    margin-bottom: 6px;
 }
