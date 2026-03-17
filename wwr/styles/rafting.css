@@ -1,9 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* =========================================
+   Variables & Reset
+   ========================================= */
 :root {
     --primary-color: #000;
     --secondary-color: #333;
@@ -11,6 +8,56 @@
     --background-color: #F0F8FF;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   Base Typography & Elements
+   ========================================= */
+body {
+    font-family: Arial, sans-serif;
+    font: var(--body-font);
+}
+
+h1 {
+    font-size: 1.85rem;
+    font-family: Acme, Arial, sans-serif;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+    font: var(--heading-font);
+    text-align: center;
+}
+
+h2 {
+    color: Maroon;
+    font-size: 1.25rem;
+}
+
+section {
+    margin: 1em auto;
+    padding: 1em;
+    border: 1px solid rgb(0 0 0 / 10%);
+    background-color: #ddd;
+    width: min(800px, 100%);
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    padding: 0.5em;
+}
+
+/* =========================================
+   Header & Navigation
+   ========================================= */
 header {
     margin: 1rem auto;
     display: grid;
@@ -21,15 +68,19 @@ header {
     font: var(--heading-font);
 }
 
+#logo {
+    font-size: 2rem;
+    font-family: Acme, Arial, sans-serif;
+}
+
 .logo img {
     margin: 0 0.25rem 0 1rem;
     width: 64px;
     height: auto;
 }
 
-#logo {
-    font-size: 2rem;
-    font-family: Acme, Arial, sans-serif;
+nav {
+    text-decoration: none;
 }
 
 .navigation {
@@ -54,58 +105,9 @@ header {
     text-decoration: underline;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    font: var(--body-font);
-}
-
-nav {
-    text-decoration: none;
-}
-
-h2 {
-    color: Maroon;
-    font-size: 1.25rem;
-}
-
-section {
-    margin: 1em auto;
-    padding: 1em;
-    border: 1px solid rgb(0 0 0 / 10%);
-    background-color: #ddd;
-    width: min(800px, 100%);
-}
-
-code {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: smaller;
-    padding: 0.5em;
-}
-
-h1 {
-    font-size: 1.85rem;
-    font-family: Acme, Arial, sans-serif;
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-    font: var(--heading-font);
-    text-align: center;
-}
-
-footer a {
-    text-decoration: none;
-}
-
-.socialmedia a {
-    /* text-decoration: none; */
-    background-color: var(--text-color);
-    align-self: self-end;
-}
-
+/* =========================================
+   Hero Section
+   ========================================= */
 .hero {
     position: relative;
     background-color: grey;
@@ -132,6 +134,13 @@ footer a {
     background-color: var(--secondary-color);
 }
 
+/* =========================================
+   Footer & Social Media
+   ========================================= */
+footer a {
+    text-decoration: none;
+}
+
 footer a,
 img {
     text-decoration: none;
@@ -139,4 +148,10 @@ img {
     height: auto;
     margin: 0 8px;
     align-items: center;
+}
+
+.socialmedia a {
+    /* text-decoration: none; */
+    background-color: var(--text-color);
+    align-self: self-end;
 }
