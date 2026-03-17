@@ -11,12 +11,6 @@
     --background-color: #F0F8FF;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 header {
     margin: 1rem auto;
     display: grid;
