@@ -19,7 +19,7 @@
    ========================================= */
 body {
     font-family: Arial, sans-serif;
-    font: var(--body-font);
+    font: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -32,7 +32,6 @@ h1 {
     opacity: 0.7;
     background-color: var(--background-color);
     color: var(--accent1-color);
-    font: var(--heading-font);
     text-align: center;
 }
 
@@ -65,7 +64,7 @@ header {
     align-items: center;
     border-bottom: 1px solid #ccc;
     max-width: 1000px;
-    font: var(--heading-font);
+    font: Arial, Helvetica, sans-serif;
 }
 
 #logo {
@@ -151,7 +150,5 @@ img {
 }
 
 .socialmedia a {
-    /* text-decoration: none; */
-    background-color: var(--text-color);
     align-self: self-end;
 }
