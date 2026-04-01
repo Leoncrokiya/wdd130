@@ -154,3 +154,65 @@ img {
 .socialmedia a {
     align-self: self-end;
 }
+
+/* Center the company contact information */
+.contact-grid {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+/* Override the absolute positioning from the base h1 rule */
+.contact-grid h1.heading {
+    position: relative;
+    top: 0;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+/* Place Map and Form side-by-side */
+.contact-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* Style the form elements to match the wireframe */
+.user form label {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.user form input[type="text"],
+.user form input[type="email"],
+.user form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.message-purpose {
+    border: none;
+    margin: 15px 0;
+}
+
+/* Align Employee Profiles horizontally */
+.employee-section {
+    text-align: center;
+    border: 1px solid var(--secondary-color);
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+}
+
+.employee-gallery figure {
+    background-color: #eaeaea; /* Light gray to match wireframe */
+    padding: 15px;
+}
