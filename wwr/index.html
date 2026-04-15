@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <img src="images/rafting-logo.png" alt="White Water Rafting">
+        <img class="logo" src="images/rafting-logo.png" alt="White Water Rafting" width="100" height="auto">
         <nav>
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
@@ -25,7 +25,7 @@
 
     <main>
         <div class="container">
-            <img class="background-img" src="images/rafting-home-picture.png" alt="Rafting" width="100" height="auto">
+            <img class="background-img" src="images/rafting-home-picture.png" alt="Rafting" width="75%" height="auto">
             <div class="overlay-text">
                 <h1>Welcome to White Water Rafting</h1>
             </div>
@@ -33,11 +33,11 @@
         <div class="input">
             <form action="input" class="details" method="post">
                 <label for="name">Name</label><br>
-                <input type="text" id="name" name="name" required><br>
+                <input type="text" id="name" name="name" placeholder="User Name" required><br>
                 <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" required><br>
+                <input type="email" id="email" name="email" placeholder="user@example.com" required><br>
                 <label for="subscribe">Please Subscribe me to the monthly newsletter</label>
-                <button class="button" type="submit">Submit</button>
+                <br><button class="button" type="submit">Submit</button>
             </form>
         </div>
     </main>
